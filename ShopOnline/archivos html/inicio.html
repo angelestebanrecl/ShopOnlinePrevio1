@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Online</title>
+    <!-- Enlace a Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+    <!-- Header con estilos Bootstrap -->
+    <header class="bg-primary text-white py-3 mb-4 shadow-sm">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="h3 m-0">Shop Online</h1>
+            <nav>
+                <a href="#" id="btnCarrito" class="btn btn-outline-light me-2">Carrito</a>
+                <a href="#" class="btn btn-outline-light">Salir</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contenido principal con container Bootstrap -->
+    <main class="container mt-4 p-4 bg-white rounded shadow">
+        <!-- Barra de búsqueda -->
+        <div class="search-bar mb-4">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Filtro de búsqueda">
+                <button class="btn btn-primary">Buscar</button>
+            </div>
+        </div>
+
+        <!-- Sección de productos -->
+        <h2 class="h4 mb-3 text-primary">Productos</h2>
+
+        <!-- Filtros (vacío en este caso, pero con estilos) -->
+        <div id="filtros" class="mb-4 p-3 border rounded bg-light">
+            <!-- Aquí se pueden agregar filtros en el futuro -->
+            <p class="text-muted">No hay filtros aplicados</p>
+        </div>
+
+        <!-- Lista de productos -->
+        <div id="productos" class="row g-3">
+            <!-- Aquí se inyectarán los productos con Bootstrap cards en el script -->
+            <!-- Ejemplo de una tarjeta de producto (placeholder) -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="Producto">
+                    <div class="card-body">
+                        <h5 class="card-title">Producto de Ejemplo</h5>
+                        <p class="card-text">Descripción del producto de ejemplo.</p>
+                        <a href="#" class="btn btn-primary">Añadir al carrito</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Script JS -->
+    <script src="../script.js"></script>
+    <!-- Bootstrap Bundle con Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
